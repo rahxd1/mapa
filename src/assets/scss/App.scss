@@ -1,2 +1,11 @@
+
+// Core variables and mixins
+@import "base/fonts";
+@import "base/variables";
+@import "base/mixins";
+@import "base/input_effects";
+// Components
+
 @import "bootstrap/scss/bootstrap";
 @import "./general";
+@import "old/base";

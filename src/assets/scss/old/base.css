@@ -1,0 +1,17 @@
+@import "animate.min"; 								/* Animate */
+@import "bootstrap"; 								/* Main Bootstrap */
+@import "menu";										/* Menu styles */
+@import "style";										/* Main theme styles */
+@import "responsive";									/* Responsive */
+@import "magnific-popup";								/* Lightbox & dialog script */
+@import "pop_up";										/* Popup Advertising */
+@import "custom";										/* Your custom css in order to apply updates easly */
+
+/*
+How to change colors
+1 uncomment one of the color variation below
+DONE!
+*/
+
+/*@import "color_scheme";					 	 			Your color scheme*/
+

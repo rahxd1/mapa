@@ -1,25 +1,29 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import Header from './Header';
 import './assets/css/App.css';
+import Nav from './components/Nav';
+import Home from './containers/HomePage'; 
+import My404Component from './containers/NotFoundPage';
 
-export default class App extends Component {
 
+class App extends Component {
   render() {
     return (
       <div>
-        <Header />
-        <main role="main" className="container">
-          <div className="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p className="lead">
-              Use this document as a way to quickly start any new project.
-              <br /> 
-              All you get is this text and a mostly barebones HTML document.
-            </p>
+        <Nav />
+        <Router>
+          <div>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/home" component={Home} />
+              <Route path='/*' exact component={My404Component}  status={404}/>
+            </Switch>
           </div>
-
-        </main>
+        </Router>
       </div>
     );
   }
 }
+
+export default App;
